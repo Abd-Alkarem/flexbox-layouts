@@ -74,3 +74,106 @@ h4 {
 }
 
 /* Flexbox Styles */
+
+/* Navbar - Horizontally aligned with space between the links, with coloring */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+/* Hero Section - Center content horizontally and vertically with coloring */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f5b041; /* Orange */
+  color: #333;
+}
+
+/* Gallery - A flexible wrapping layout with colorful boxes */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.gallery .box:nth-child(odd) {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+.gallery .box:nth-child(even) {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+/* Grid - Evenly spaced blocks with colors */
+.grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid .block:nth-child(1) {
+  background-color: #9b59b6; /* Purple */
+}
+
+.grid .block:nth-child(2) {
+  background-color: #1abc9c; /* Teal */
+}
+
+.grid .block:nth-child(3) {
+  background-color: #e67e22; /* Orange */
+}
+
+.grid .block:nth-child(4) {
+  background-color: #f39c12; /* Yellow */
+}
+
+.grid .block:nth-child(5) {
+  background-color: #34495e; /* Dark Blue */
+}
+
+/* Nested Containers - Flexbox layout with colorful items */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-1 {
+  flex-basis: calc(100% - 1px);
+  background-color: #e74c3c; /* Red */
+}
+
+.item-2 {
+  flex-basis: calc(50% - 20px);
+  background-color: #3498db; /* Blue */
+}
+
+.item-3 {
+  flex-basis: calc(50% - 20px);
+  background-color: #2ecc71; /* Green */
+}
+
+.item-4 {
+  flex-basis: calc(50% - 20px);
+  background-color: #f1c40f; /* Yellow */
+}
+
+.item-5 {
+  flex-basis: calc(50% - 20px);
+  background-color: #8e44ad; /* Purple */
+}
